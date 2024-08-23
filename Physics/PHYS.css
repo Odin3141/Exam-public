@@ -1,0 +1,111 @@
+
+#timer {
+  text-align: center;
+  height: 30px;
+  font-size: 25px;
+  font-family:arial;
+  color: white;
+  padding-top:20px;
+  display: block;
+}
+.timer {
+  background-color: darkkhaki;
+  text-align: center;
+  font-size: 25px;
+  font-family:arial;
+  color: white;
+  display: block;
+  border-radius: 15px;
+}
+#button {
+  background-color: darkkhaki;
+  text-align: center;
+  height: 40px;
+  font-size: 30px;
+  font-family:arial;
+  color: white;
+  margin-top: -30px;
+}
+#hide {
+  border-radius:20px;
+  border: 2px white double;
+  cursor: pointer;
+}
+iframe {
+  width: 600px;
+  height: 360px;
+}
+.sections {
+  display: flex;
+}
+.sections > div {
+  width:50%;
+}
+#back {
+	width:70px;
+	height:40px;
+	background: navy;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	font-weight: bold;
+	font-size: 15px;
+	text-align:center;
+	cursor: pointer;
+	display: none;
+	float:left;
+}
+#next {
+	width:70px;
+	height:40px;
+	background: navy;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	font-weight:bold;
+    font-size: 15px;
+	text-align:center;
+	cursor:pointer;
+	display: block;
+	float:right;
+}
+#submit {
+	width:70px;
+	height:40px;
+	background: navy;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	font-weight:bold;
+    font-size: 15px;
+	text-align:center;
+	cursor:pointer;
+	display: none;
+	float:right;
+}
+.answerbox {
+    height: 60px;
+    width: 300px;
+    border-radius: 30px;
+    border: 2px solid blue;
+	text-align: center;
+	font-size:20px;
+}
+.answerbox:hover {
+    border-block: 2px solid green;
+}
+#store {
+	width:70px;
+	height:40px;
+	background: navy;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	font-weight:bold;
+    font-size: 15px;
+	text-align:center;
+	cursor:pointer;
+	display: block;
+	float:right;
+	margin-right: 5px;
+}

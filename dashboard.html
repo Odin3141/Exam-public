@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<title>Academia | Dashboard</title>
+<link rel="icon" href="Images/uclicon.ico">
+<body>
+<table>
+<tr>
+<td align="center" height="40px"><span style="font-family:Edwardian script ITC;font-size:90px;color:pink">Academia</span></td>
+</tr>
+<tr>
+<td>
+<a href=""><img src="Images/profile.png" style="width:5%;border-radius:30px;float:right" title="Your Profile"></a></li>
+<a href="calendar"><img src="Images/calendar.png" style="width:4.5%;float:right;margin:2px" title="Your Calendar"></a>
+<a href=""><img src="Images/settings.png" style="width:4.5%;float:right;margin:2px" title="Settings"></a>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="Images/kolapic.jpg" style="border: 3px solid powderblue;border-radius:100px;width:10%;">
+</td></tr>
+<tr>
+<td style="font-family:sans serif;text-align:center;font-size:30px;color:orange"/>Welcome, Kolade Adedowole
+</tr>
+<tr>
+<td id="testCompleted" style="font-size:50px;text-align:center;color:orange;">
+<script src="testCompleted.js">
+</script>
+</td>
+</tr>
+<tr  bgcolor="orange">
+<td class="description">Your Progress:<span id="progress" class="description"></span>
+<script>
+</script>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li id="progress1" style="display:block;align-items:center;justify-content:center;">
+<div>
+<span id="progressspan1"></span></div>
+<br>
+<div>
+<svg version="1.1" width="160px" height="160px">
+	<defs>
+		<linearGradient id="GradientColor">
+			<stop offset="0%" style="stop-color:#e91e63" />
+			<stop offset="100%" style="stop-color:#673ab7" />
+		</linearGradient>
+	</defs>
+<circle cx="80" cy="80" r="70" stroke-linecap="round" id="cic"/>
+<text font-weight="bold" fill="purple" font-size="20" font-family="Verdana" x="50px" y="-75px" id="number"></text>
+<span class="noprogress" style="display:none">Sorry but you haven't taken any tests</span>
+</svg>
+</div>
+<div>
+<span id="time"></span>
+</div>
+<script>
+var sre = localStorage.getItem("sco")
+var tsf = Math.floor((sre * 100)/30)
+let number = document.getElementById("number");
+var elem = document.getElementById("cic");
+let counter = 0;
+let count = 487
+setInterval (() => {
+  if (counter === tsf) {
+clearInterval();
+  } else {
+  counter+=1;
+number.innerHTML=counter+"%";
+count-= 4.72 
+elem.style['stroke-dashoffset'] = count;
+  }
+}, 30);
+</script>
+
+</li>
+</td>
+</tr>
+<tr bgcolor="orange">
+<td class="description">Review Previous Tests</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li class="review" title="Learn what makes the world tick!" style="background-color:blue"><a href="Physics/physicsrules.html">
+<img src="Images/physics.jpg" class="test"/>
+<br>
+<span>Physics</span>
+</a></li>
+</ul>
+</td>
+</tr>
+<tr  bgcolor="orange">
+<td class="description">Take New Test</td>
+</tr>
+<br>
+<tr>
+<td>
+<ul style="display:block;overflow-x:auto;width:100%;height:330px">
+<div style="width:253%">
+<li class="new" title="Learn facts about your favourite animal!" style="background-color:navy"><a href="animalhusbandryrules.html">
+<img src="Images/animalhusbandry.jpg" class="test"/>
+<br>
+<span>Animal Husbandry</span>
+</a></li>
+<li class="new" title="Dive into the halls of life science!" style="background-color:green"><a href="biologyrules.html">
+<img src="Images/biology.jpg" class="test"/>
+<br>
+<span>Biology</span>
+</a></li>
+<li class="new" title="Discover the science of matter!" style="background-color:red"><a href="chemistry.html">
+<img src="Images/chemistry.jpg" class="test"/>
+<br>
+<span>Chemistry</span>
+</a></li>
+<li class="new" title="Know your rights!" style="background-color:indigo"><a href="civiceducationrules.html">
+<img src="Images/civiceducation.jpg" class="test"/>
+<br>
+<span>Civic Education</span>
+</a></li>
+<li class="new" title="Who wants to be a millonaire?" style="background-color:turquoise"><a href="economics.html">
+<img src="Images/economics.jpg" class="test"/>
+<br>
+<span>Economics</span>
+<li class="new" title="Learn to read, speak and write in the world's most popular lanuguage!" style="background-color:yellow"><a href="english.html">
+<img src="Images/english.jpg" class="test"/>
+<br>
+<span>English Language</span>
+</a></li>
+<li class="new" title="Do you want more math? Well..." style="background-color:black"><a href="furthermathrules.html">
+<img src="Images/furthermath.jpg" class="test"/>
+<br>
+<span>Further Mathematics</span>
+</a></li>
+<li class="new" title="Journey around the globe with geography" style="background-color:brown"><a href="geography.html">
+<img src="Images/geography.jpg" class="test"/>
+<br>
+<span>Geography</span>
+</a></li>
+<li class="new" title="Step into the world of numbers!" style="background-color:orange"><a href="mathrules.html">
+<img src="Images/math.jpg" class="test"/>
+<br>
+<span>Mathematics</span>
+</a></li>
+<li class="new" title="Learn what makes the world tick!" style="background-color:blue"><a href="Physics/physicsrules.html">
+<img src="Images/physics.jpg" class="test"/>
+<br>
+<span>Physics</span>
+</a></li>
+</div>
+</ul>
+</td>
+</tr>
+</td>
+</tr>
+<tr bgcolor="orange">
+<td class="description">Competitions:<span id="progress" class="description"></span>
+</td>
+</tr>
+<tr>
+<td>
+<ul style="display:block;overflow-x:scroll;width:100%;height:330px">
+<div style="width:253%">
+<li class="com" title="Become Nigeria's greatest science student!" style="background-color:darkgreen"><a href="InterswitchSPAK/dashboard.html">
+<img src="Images/interswitchSPAK.jpg" class="test"/>
+<br>
+<span>Interswitch &nbsp SPAK 6.0</span>
+</a></li>
+<li class="com" title="Battle it out for the title of the Math King!" style="background-color:indigo"><a href="CLMCA.html">
+<img src="Images/CLMCA.jpg" class="test"/>
+<br>
+<span>CLMCA</span>
+</a></li>
+</table>
+</body>
+</html>

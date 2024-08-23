@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="BIOM.css">
+</head>
+<title>Biology</title>
+<link rel="icon" href=biology.jpg>
+<body>
+<script src="timer.js"></script>
+<script src="media.js"></script>
+<script src="toggle.js"></script>
+<script src="page.js"></script>
+<table>
+<div class="timer"><span id="timer"></span></div><br>
+<div id="button"><button type="button" onclick="toggle()" id="hide"><span id="show">Hide</span></button>
+</div>
+<div id="tools">
+<img src="eliminate.png" onclick="eliminate()" style="float:right;cursor: pointer;"><script src="elimination.js"></script>
+</div>
+<br>
+<div class="sections">
+<div class="iframe" style="width:45%">
+<iframe src="BIOM1.html" id="iframe"></iframe>
+</div>
+<div style="width:2px;height:360px;background-color:black;margin-left: 50px;margin-right:50px;">
+</div>
+<div class="options" style="width=40%">
+<div id="elimCheckBox" style="display:none">
+<input type ="checkbox" id="elimA"><label for="elimA">A</label>
+<input type ="checkbox" id="elimB"><label for="elimB">B</label>
+<input type ="checkbox" id="elimC"><label for="elimC">C</label>
+<input type ="checkbox" id="elimD"><label for="elimD">D</label>
+</div>
+
+<br>
+<div class="checkmark" id="A1">
+<input type="radio" name="radio" id="A" class="container" onclick="clickOption()">
+<label for="A" class="label" id="1A">Chemosynthesis
+</label>
+</div>
+<br><br>
+<div class="checkmark" id="B2">
+<input type="radio" name="radio" id="B" class="container" onclick="clickOption()">
+<label for="B" class="label" id="1B">Transpiration
+</label>
+</div>
+<br><br>
+<div class="checkmark" id="C3">
+<input type="radio" name="radio" id="C" class="container" onclick="clickOption()">
+<label for="C" class="label" id="1C">Photosynthesis
+</label>
+</div>
+<br><br>
+<div class="checkmark" id="D4">
+<input type="radio" name="radio" id="D" class="container" onclick="clickOption()">
+<label for="D" class="label" id="1D">Photolysis
+</label>
+</div>
+</div>
+</div>
+<br>
+<div style="height:50px">
+<button id="back" onclick="previousPage()">Back</button>
+<button id="next" onclick="nextPage()">Next</button>
+<button id="submit" onclick="nextSection()">Submit</button>
+</div>
+<br><br>
+<div id="demo"></div>
+</body>
+</html>

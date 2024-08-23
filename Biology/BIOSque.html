@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="BIOS.css">
+</head>
+<title>Biology</title>
+<link rel="icon" href=biology.jpg>
+<body>
+<script src="timer2.js"></script>
+<script src="media2.js"></script>
+<script src="toggle2.js"></script>
+<script src="page2.js"></script>
+<table>
+<div class="timer2"><span id="timer2"></span></div><br>
+<div id="button2"><button type="button" onclick="toggle2()" id="hide2"><span id="show2">Hide</span></button>
+</div>
+<br>
+<div class="sections2">
+<div class="iframe2">
+<iframe src="BIOS1.html" id="iframe2"></iframe>
+</div>
+<div style="width:2px;height:360px;background-color:black;margin-left: 50px;margin-right:50px;">
+</div>
+<div class="input">
+<div>
+<ul style="font-size:20px">
+<li>Your answer must be correctly spelt.</li>
+<li>Answers from calculation results must be written to three significant figures.</li>
+<li>Answers that are lengthy are less likely to score.</li>
+</ul>
+</div>
+<div>
+<input type="text" class="answerbox" style="margin-left:120px">
+</div>
+</div>
+</div>
+<br>
+<div style="height:50px">
+<button id="back2" onclick="previousPage2()">Back</button>
+<button id="next2" onclick="nextPage2()">Next</button>
+<button id="submit2" onclick="nextSection2()">Submit</button>
+<button id="store" onclick="save()">Save
+     </button>
+</div>
+<div id="demo"></div>
+</body>
+</html>

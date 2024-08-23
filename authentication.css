@@ -1,0 +1,91 @@
+body {
+	background-image:url("Images/wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:90%;
+	text-align:center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+a:visited {
+  color: orange;
+  text-decoration: none;
+}
+
+a:active {
+  color: red;
+  text-decoration: underline;
+  text-align: center
+}
+
+legend {
+  color:blue;
+}
+
+p {
+  align: center;
+  color: red;
+}
+
+input {
+  border: 2px solid orange;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input:hover {
+  border: 2px solid green;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+form {
+  padding-top:180px;
+  padding-left:160px;
+  background-image:url("");
+  background-repeat:no-repeat;
+  background-size:cover;
+  width: 1000px;
+  text-align:center;
+}
+
+label {
+  color: orange;
+}
+
+legend {
+  color: orange;
+}
+
+img {
+  border-radius:50px;
+  width: 20%;
+}
+
+button {
+  border-radius:15px;
+  background-color: orange;
+  width: 70px;
+  height: 40px;
+  border: 2px solid green
+}
+
+button:hover {
+  border-radius:15px;
+  background-color: green;
+  width: 70px;
+  height: 40px;
+  border: 2px solid orange
+}

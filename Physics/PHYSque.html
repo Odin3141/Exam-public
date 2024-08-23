@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href=PHYS.css>
+</head>
+<title>Physics | Subjective</title>
+<link rel="icon" href=physics.jpg>
+<body>
+<script src="PHYStimer.js"></script>
+<script src="PHYStoggle.js"></script>
+<script src="PHYS.js"></script>
+<table>
+<div class="timer"><span id="timer"></span></div><br>
+<div id="button"><button type="button" onclick="toggle()" id="hide"><span id="show">Hide</span></button>
+</div>
+<br>
+<div class="sections">
+<div class="iframe">
+<iframe src="PHYS/PHY31.html" id="iframe"></iframe>
+</div>
+<div style="width:2px;height:360px;background-color:black;margin-left: 50px;margin-right:50px;">
+</div>
+<div class="input">
+<div>
+<ul style="font-size:20px">
+<li>Your answer must be correctly spelt.</li>
+<li>Answers from calculation results must be in figure and not in words and must to be written to three significant figures.</li>
+<li>Answers that are lengthy are less likely to score.</li>
+<li>All units must be included for calculation questions. If S.I. unit is not accessible on your keyboard, type in the name of the unit you wish to add in words with a space separating the number and the unit.
+<li>It is mandatory that the first letters of all answers inputed is in lowercase. Exceptions apply to those which grammatical rules affect such as proper nouns.</li>
+</ul>
+</div>
+<div>
+<input type="text" class="answerbox" style="margin-left:120px" id="31" autofocus>
+</div>
+</div>
+</div>
+<br>
+<div style="height:50px">
+<button id="back" onclick="previousPage()">Back</button>
+<button id="next" onclick="nextPage()">Next</button>
+<button id="submit" onclick="nextSection()">Submit</button>
+<button id="store" onclick="save()">Save
+     </button>
+</div>
+<div id="demo"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="stylesheet" href="authentication.css">
+</head>
+<title>Academia | Log In</title>
+<link rel="icon" href="Images/uclicon.ico">
+<body>
+<span style="font-family:Edwardian script ITC;font-size:60px;color:darkred;text-align:center">&nbsp &nbsp &nbsp &nbsp Academia's</span>
+<form action="" method="post" target autocomplete accept-charset>
+<fieldset>
+<legend align="center"><img src="Images/profile.png" style="width:5%;border-radius:30px;align:center"><br>Please enter your details to proceed to homepage</legend>
+<p id="error0" align="left"></p>
+<label for="Username">Username</label>
+<br><br>
+<input id="Username" type="text" required autocomplete="on">
+<br>
+<br>
+<label for="Password">Password</label>
+<br><br>
+<input id="Password" type="password" required autocomplete>
+<br><br>
+<button type="button"
+onclick="studentAuthentication()">Log in</button>
+<script src="studentAuthentication.js">
+</script>
+<p style="text-align:right;color:orange">Don't have an account?<a href="signup.html" class="signup"> Sign Up</a></p>
+</fieldset>
+</form>
+</body>
+</html>

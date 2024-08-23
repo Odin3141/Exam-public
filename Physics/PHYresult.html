@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+</head>
+<title>Academia | Result</title>
+<link rel="icon" href=physics.jpg>
+<link rel="stylesheet" href=PHYresult.css>
+</head>
+<script src="PHYresult.js"></script>
+<body style="background-color:beige;width:90%;height:100px;margin:auto;border-radius:20px;font-size:20px" onload="review()">
+<div><h1 style="text-align:center"><span style="font-family:Edwardian script ITC;font-size:60px;color:darkred">Academia's</span>&nbsp <span style="color:blue">Physics</span> Result<h1></td>
+</div>
+<br><br>
+<div><h2 style="text-align:center;color:red;font-size">BRAVO! You have completed your mock test!</h2>
+<div id="demo"></div>
+</div>
+<br><br>
+<div><h2 style="text-align:center">Mock Test Result</h2>
+</div>
+<div class="speedo" style="display:flex">
+<div class="speedometer-container">
+<div class="speedometer-text">
+<div class="static">Physics<br>Multi-Choice</div>
+<div class="dynamic">
+<span class="km">0%</span>
+</div>
+</div>
+<div class="center-point"></div>
+<div class="speedometer-center-hide"></div>
+<div class="speedometer-bottom-hide">
+ </div>
+<div class="arrow-container">
+  <div class="arrow-wrapper speed-0">
+    <div class="arrow"></div>
+  </div>
+</div>
+<div class="speedometer-scale speedometer-scale-1 active"></div>
+<div class="speedometer-scale speedometer-scale-2"></div>
+<div class="speedometer-scale speedometer-scale-3"></div>
+<div class="speedometer-scale speedometer-scale-4"></div>
+<div class="speedometer-scale speedometer-scale-5"></div>
+<div class="speedometer-scale speedometer-scale-6"></div>
+<div class="speedometer-scale speedometer-scale-7"></div>
+<div class="speedometer-scale speedometer-scale-8"></div>
+<div class="speedometer-scale speedometer-scale-9"></div>
+<div class="speedometer-scale speedometer-scale-10"></div>
+<div class="speedometer-scale speedometer-scale-11"></div>
+</div>
+<div class="speedometer2-container">
+<div class="speedometer2-text">
+<div class="static2">Physics<br>Subjective</div>
+<div class="dynamic2">
+<span class="km2">0%</span>
+</div>
+</div>
+<div class="center2-point"></div>
+<div class="speedometer2-center-hide"></div>
+<div class="speedometer2-bottom-hide">
+ </div>
+<div class="arrow2-container">
+  <div class="arrow2-wrapper speed2-0">
+    <div class="arrow2"></div>
+  </div>
+</div>
+<div class="speedometer2-scale speedometer2-scale-1 active"></div>
+<div class="speedometer2-scale speedometer2-scale-2"></div>
+<div class="speedometer2-scale speedometer2-scale-3"></div>
+<div class="speedometer2-scale speedometer2-scale-4"></div>
+<div class="speedometer2-scale speedometer2-scale-5"></div>
+<div class="speedometer2-scale speedometer2-scale-6"></div>
+<div class="speedometer2-scale speedometer2-scale-7"></div>
+<div class="speedometer2-scale speedometer2-scale-8"></div>
+<div class="speedometer2-scale speedometer2-scale-9"></div>
+<div class="speedometer2-scale speedometer2-scale-10"></div>
+<div class="speedometer2-scale speedometer2-scale-11"></div>
+</div>
+<div class="speedometer3-container">
+<div class="speedometer3-text">
+<div class="static3">Physics<br>Theory</div>
+<div class="dynamic3">
+<span class="km3">0%</span>
+</div>
+</div>
+<div class="center3-point"></div>
+<div class="speedometer3-center-hide"></div>
+<div class="speedometer3-bottom-hide">
+ </div>
+<div class="arrow3-container">
+  <div class="arrow3-wrapper speed3-0">
+    <div class="arrow3"></div>
+  </div>
+</div>
+<div class="speedometer3-scale speedometer3-scale-1 active"></div>
+<div class="speedometer3-scale speedometer3-scale-2"></div>
+<div class="speedometer3-scale speedometer3-scale-3"></div>
+<div class="speedometer3-scale speedometer3-scale-4"></div>
+<div class="speedometer3-scale speedometer3-scale-5"></div>
+<div class="speedometer3-scale speedometer3-scale-6"></div>
+<div class="speedometer3-scale speedometer3-scale-7"></div>
+<div class="speedometer3-scale speedometer3-scale-8"></div>
+<div class="speedometer3-scale speedometer3-scale-9"></div>
+<div class="speedometer3-scale speedometer3-scale-10"></div>
+<div class="speedometer3-scale speedometer3-scale-11"></div>
+</div>
+</div>
+<div style="border-right: 1px solid black;background-color:beige;position:sticky;margin-left:-70px;margin-top:-137px;height:500px;z-index:12;width:1352px">
+<div style="margin-left:4px;text-align:center;font-size:40px;border: 1px solid black;border-right:0px;width:1348px">Review Questions</div>
+<div style="margin-left:8px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1343px;border-left: 1px solid black" onclick="mcReview()">Multi-Choice <span id="multicscore" style="font-size:35px"></span></div>
+<div id="multic" style="display:none">
+<div style="display:flex;margin-left:12px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1340px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:60px;font-size:30px;">S/N</div>
+<div style="text-align:center;padding-top:6px;width:900px;border-right: 1px solid black;font-size:30px;">Text</div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:60px;font-size:30px;">A</div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:60px;font-size:30px;">B</div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:60px;font-size:30px;">C</div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:60px;font-size:30px;">D</div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">State</div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">1</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="1A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="1B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="1C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="1D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state1"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">2</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="2A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="2B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="2C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="2D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state2"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">3</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="3A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="3B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="3C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="3D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state3"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">4</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="4A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="4B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="4C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="4D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state4"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">5</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="5A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="5B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="5C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="5D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state5"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">6</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="6A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="6B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="6C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="6D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state6"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">7</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="7A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="7B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="7C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="7D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state7"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">8</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="8A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="8B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="8C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="8D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state8"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">9</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="9A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="9B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="9C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="9D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state9"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">10</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="10A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="10B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="10C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="10D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state10"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">11</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="11A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="11B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="11C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="11D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state11"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">12</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="12A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="12B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="12C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="12D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state12"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">13</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="13A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="13B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="13C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="13D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state13"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">14</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="14A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="14B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="14C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="14D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state14"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">15</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="15A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="15B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="15C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="15D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state15"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">16</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="16A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="16B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="16C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="16D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state16"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">17</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="17A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="17B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="17C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="17D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state17"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">18</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="18A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="18B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="18C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="18D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state18"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">19</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="19A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="19B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="19C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="19D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state19"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">20</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="20A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="20B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="20C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="20D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state20"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">21</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="21A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="21B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="21C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="21D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state21"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">22</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="22A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="22B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="22C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="22D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state22"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">23</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="23A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="23B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="23C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="23D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state23"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">24</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="24A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="24B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="24C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="24D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state24"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">25</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="25A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="25B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="25C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="25D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state25"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">26</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="26A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="26B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="26C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="26D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state26"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">27</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="27A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="27B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="27C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="27D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state27"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">28</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="28A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="28B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="28C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="28D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state28"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">29</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="29A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="29B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="29C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="29D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state29"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">30</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="30A"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:3px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="30B"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="30C"></span></div>
+<div style="text-align:center;padding-top:4px;padding-left:4px;border-right: 1px solid black;width:60px;font-size:30px;"><span class="box" id="30D"></span></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state30"></span></div>
+</div>
+</div>
+<div style="margin-left:8px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1343px;border-left: 1px solid black" onclick="subjReview()">Subjective<span id="subjscore" style="font-size:35px"></span></div>
+<div id="subj" style="display:none">
+<div style="display:flex;margin-left:12px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1340px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:60px;font-size:30px;">S/N</div>
+<div style="text-align:center;padding-top:6px;width:900px;border-right: 1px solid black;font-size:30px;">Text</div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">Answer</div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">State</div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">1</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="31" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state31"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">2</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="32" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state32"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">3</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="33" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;"><span id="state33"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">4</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="34" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state34"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">5</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="35" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state35"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">6</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="36" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state36"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">7</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="37" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state37"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">8</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="38" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state38"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">9</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="39" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state39"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">10</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="40" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state40"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">11</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="41" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state41"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">12</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="42" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state42"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">13</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="43" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state43"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">14</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="44" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state44"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">15</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="45" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state45"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">16</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="46" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state46"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">17</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="47" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state47"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">18</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="48" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state48"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">19</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="49" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state49"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">20</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="50" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state50"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">21</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="51" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state51"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">22</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="52" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state52"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">23</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="53" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state53"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">24</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="54" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state54"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">25</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="55" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state55"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">26</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="56" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state56"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">27</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="57" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state57"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">28</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="58" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state58"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">29</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="59" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state59"></span></div>
+</div>
+<div style="display:flex;margin-left:17px;text-align:left;font-size:40px;border-bottom: 1px solid black;width:1335px;border-left: 1px solid black">
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:54px;font-size:30px;">30</div>
+<div style="text-align:center;padding-top:6px;width:902px;border-right: 1px solid black;font-size:30px;"></div>
+<div id="60" style="text-align:center;padding-top:6px;border-right: 1px solid black;width:301px;font-size:30px;"></div>
+<div style="text-align:center;padding-top:6px;border-right: 1px solid black;width:300px;font-size:30px;">
+<span id="state60"></span></div>
+</div>
+</div>
+</div>
+</body>
+</html>

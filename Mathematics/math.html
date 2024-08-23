@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="stylesheet" href="math.css">
+</head>
+<title>Mathematics</title>
+<link rel="icon" href=uclicon.ico>
+<body>
+<script src="time.js"></script>
+<script src="medi.js"></script>
+<script src="toggle.js"></script>
+<script src="option.js"></script>
+<table>
+<div class="timer"><span id="timer"></span></div><br>
+<div id="button"><button type="button" onclick="toggle()" id="hide"><span id="show">Hide</span></button>
+</div>
+<div id="tools">
+<img src="annotate.png" onclick="annotate()" style="float:right;cursor: pointer;"><script src="annotate.js"></script>
+<img src="eliminate.png" onclick="eliminate()" style="float:right;cursor: pointer;"><script src="elimination.js"></script>
+<img src="directions.png" onclick="directions()"style="float:left;cursor: pointer;">
+</div>
+<br>
+<div class="sections">
+<div class="iframe"><iframe src="MATAM1.html" id="iframe"></iframe>
+</div>
+<div style="width:2px;height:360px;background-color:black;margin-left: 50px;margin-right:50px;">
+</div>
+<div class="options">
+<div id="elimCheckBox" style="display:none">
+<input type ="checkbox" id="elimA"><label for="elimA">A</label>
+<input type ="checkbox" id="elimB"><label for="elimB">B</label>
+<input type ="checkbox" id="elimC"><label for="elimC">C</label>
+<input type ="checkbox" id="elimD"><label for="elimD">D</label>
+</div>
+
+<br>
+<div class="checkmark" id="A1">
+<input type="radio" name="radio" id="A" class="container" onclick="clickOption()">
+<label for="A" class="label" id="optA">One
+</label>
+</div>
+<br><br>
+<div class="checkmark" id="B2">
+<input type="radio" name="radio" id="B" class="container" onclick="clickOption()">
+<label for="B" class="label" id="optB">Two
+</label>
+</div>
+<br><br>
+<div class="checkmark" id="C3">
+<input type="radio" name="radio" id="C" class="container" onclick="clickOption()">
+<label for="C" class="label" id="optC">Three
+</label>
+</div>
+<br><br>
+<div class="checkmark" id="D4">
+<input type="radio" name="radio" id="D" class="container" onclick="clickOption()">
+<label for="D" class="label" id="optD">Four
+</label>
+</div>
+</div>
+</div>
+<div id="reviewBox" style="display:none">
+<div style="background-color:gray;height:40px;width:270px;color:white;margin:auto;border-radius:10px;display:block;text-align:center;font-size:30px;margin-top:3px">Review Questions</div>
+<div style="background-color:lightgray;height:230px;width:270px;color:white;margin:auto;border-radius:10px;display:block;padding-left:6px;padding-top:6px">
+<span class="box" id="Q1" onclick=""></span><span class="box" id="Q2" onclick=""></span>
+<span class="box" id="Q3" onclick=""></span><span class="box" id="Q4" onclick=""></span>
+<span class="box" id="Q5" onclick=""></span><span class="box" id="Q6" onclick=""></span>
+<span class="box" id="Q7" onclick=""></span><span class="box" id="Q8" onclick=""></span>
+<span class="box" id="Q9" onclick=""></span><span class="box" id="Q10" onclick=""></span>
+<span class="box" id="Q11" onclick=""></span><span class="box" id="Q12" onclick=""></span>
+<span class="box" id="Q13" onclick=""></span><span class="box" id="Q14" onclick=""></span>
+<span class="box" id="Q15" onclick=""></span><span class="box" id="Q16" onclick=""></span>
+<span class="box" id="Q17" onclick=""></span><span class="box" id="Q18" onclick=""></span>
+<span class="box" id="Q19" onclick=""></span><span class="box" id="Q20" onclick=""></span>
+<span class="box" id="Q21" onclick=""></span><span class="box" id="Q22" onclick=""></span>
+<span class="box" id="Q23" onclick=""></span><span class="box" id="Q24" onclick=""></span>
+<span class="box" id="Q25" onclick=""></span><span class="box" id="Q26" onclick=""></span>
+<span class="box" id="Q27" onclick=""></span><span class="box" id="Q28" onclick=""></span>
+<span class="box" id="Q29" onclick=""></span><span class="box" id="Q30" onclick=""></span>
+</div>
+</div>
+
+<div style="background-color:bisque;height:40px">
+<img src="review.png" onclick="review()" style="margin-left:670px;cursor: pointer;"><script src="review.js"></script>
+</div>
+<br>
+<div style="height:50px">
+<button id="back" onclick="previousPage()">Back</button><script src="page.js"></script>
+<button id="next" onclick="nextPage()">Next</button><script src="page.js"></script>
+<input id="submit" type="submit" value="Submit" action="answer.php"/>
+</div>
+<br><br>
+<div id="demo"></div>
+</body>
+</html>

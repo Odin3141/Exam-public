@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="stylesheet" href="signup.css">
+</head>
+<title>Academia | Sign Up</title>
+<link rel="icon" href=uclicon.ico>
+<body>
+<table>
+<span style="font-family:Edwardian script ITC;font-size:60px;color:darkred;text-align:center"> Academia</span>
+<form action="" method="post" target autocomplete accept-charset style="text-align:left">
+<fieldset>
+<legend align="center">Fill out all required information</legend>
+<p id="error0" align="left"></p>
+<label for="firstname">First Name</label>
+<br><br>
+<input id="firstname" type="text" required name="firstname">
+<br>
+<br>
+<label for="lastname">Last Name</label>
+<br><br>
+<input id="lastname" type="text" required name="lastname">
+<br><br>
+<label for="class">Class</label>
+<br>
+<select required style="color:white" value="class" name="class">
+<option>SSS 1</option>
+<option>SSS 2</option>
+<option>SSS 3</option>
+</select>
+<br>
+<br>
+<label for="birthdate">Date of Birth</label>
+<br>
+<input id="birthdate" type="date" required name="birthdate">
+<br><br>
+<label for="password">Password</label>
+<br><br>
+<input id="password" type="password" required name="password">
+<br><br>
+<input type="checkbox" id="accept" style="width:15px;height:15px;" required><label for="accept" style="color:blue">I accept the terms and conditions of Academia's Mathematics Test</label>
+<br><br>
+<input type="submit" value="Sign Up" action="collectsignup.php" target="_self" method="get"
+onclick="authentication.html">
+</fieldset>
+</form>
+</table>
+</body>
+</html>

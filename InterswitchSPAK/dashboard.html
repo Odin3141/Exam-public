@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+#body {
+	background: beige;
+	width: 97%;
+	height:1000px;
+	margin:auto;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+#query {
+	border-radius: 30px;
+	width: 200px;
+	height: 40px;
+	text-align:center;
+	display:none;
+}
+.news {
+	border-radius: 20px;
+	height: 500px;
+	width: 80%;
+	margin:auto;
+	display:block;
+}
+.newsimage {
+	width: 93.7%;
+	height:250px;
+}
+.newsheader {
+	margin:auto;
+	width: 88%;
+	height:70px;
+	background: white;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.newsfooter {
+	width: 88%;
+	height:60px;
+	background: white;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	margin: auto;
+}
+.adminpic {
+	border-radius: 50%;
+	width:5%;
+	float:left;
+	margin-left:4px;
+	margin-top:4px;
+	border: 2px groove silver
+}
+.admin {
+	font-family:arial;
+	font-weight: bold;
+	font-size: large;
+}
+a:link, a:visited, a:hover {
+	color: black;
+	text-decoration: none;
+}
+.foot {
+	border-radius: 20px;
+	background-color:none;
+	height: 40px;
+	width: 15%;
+	margin:auto;
+	cursor:pointer
+}
+.emoji {
+	font-size: 20px;
+	color:blue;
+}
+</style>
+</head>
+<title>InterswitchSPAK 6.0  | Dashboard</title>
+<link rel="icon" href=SPAK.jpg>
+<body onload="on()">
+<script src="SPAKtoggle.js"></script>
+<div id="body">
+
+<script>
+function on() {
+	document.getElementById("date0").innerHTML = new Date("dec 17, 2023");
+	document.getElementById("date1").innerHTML = new Date("dec 17, 2023");
+	
+}
+</script>
+
+
+
+
+
+<div style="display:flex;justify-content: space-between;">
+<div style="font-family:Edwardian script ITC;font-size:60px;color:darkred;">Academia
+</div>
+<div><a href="search.html">
+<img src="search.png" id="searchicon"></a>
+</div>
+</div>
+<div>
+<ul style="display:flex;list-style-type:none;margin-left:-40px">
+<li style="margin:auto;width:20%;;border-bottom:4px solid darkgreen;display:flex;justify-content:space-around"><a href="dashboard.html">
+<img src="home.png">
+</li></a>
+<li style="margin:auto;width:20%;;display:flex;justify-content:space-around"><a href="SPAKvideo.html">
+<img src="video.png">
+</li></a>
+<li style="margin:auto;width:20%;;display:flex;justify-content:space-around"><a href="SPAKchat.html">
+<img src="chat.png">
+</li></a>
+<li style="margin:auto;width:20%;;display:flex;justify-content:space-around"><a href="SPAKnotify.html">
+<img src="bell.png"></a>
+</li>
+<li style="margin:auto;width:20%;;display:flex;justify-content:space-around"><a href="SPAKmenu.html">
+<img src="settings.png"></a>
+</li>
+</ul>
+</div>
+<div style="background:darkgreen;width:100%;height:3px;margin-top:-17px">
+</div>
+<br>
+<div style="display:block;overflow:auto;height:1000px">
+<div style="height:300%">
+<div class="news" id="news1">
+<div class="newsheader">
+<div><a href="adminprofile.html">
+<img src="kolapic.jpg" class="adminpic"/></a>
+</div>
+<div style="float:left;width:20px">
+</div>
+<div style="float:left;margin-left:10px;margin-top:6px">
+<div class="admin"><a href="adminprofile.html">The Dean</a></div>
+<div id="date0"></div>
+</div>
+<div style="float:right"><img src="home.png" onclick="remove(1)" style="cursor:pointer">
+</div>
+</div>
+<div style="background:white;width:88%;height:20px;margin:auto;word-wrap:break-word;text-align:center">The Dean welcomes you all to Academia's InterswitchSPAK. Our only desire is to see you achieve academic excellence.</div>
+<div bgcolor="grey" style="margin-left:61px;height:250px">
+<img src="SPAK.jpg" class="newsimage"/>
+</div>
+<div class="newsfooter" style="display:flex;align-items:center;justify-content:center">
+<button class="foot" onclick="like(1)"><span class="emoji">&#128077;</span> &nbsp Like</button>
+<button class="foot" onclick="comment(1)"><span class="emoji">&#128488;</span> &nbsp Comment</button>
+<button class="foot" onclick="share(1)"><span class="emoji">&#128257;</span> &nbsp Share</button>
+</div>
+</div>
+
+<div class="news" id="news2">
+<div class="newsheader">
+<div><a href="adminprofile.html">
+<img src="kolapic.jpg" class="adminpic"/></a>
+</div>
+<div style="float:left;width:20px">
+</div>
+<div style="float:left;margin-left:10px;margin-top:6px">
+<div class="admin"><a href="adminprofile.html">The Dean</a></div>
+<div id="date1"></div>
+</div>
+<div style="float:right"><img src="home.png" onclick="remove(2)" style="cursor:pointer">
+</div>
+</div>
+<div style="background:white;width:88%;height:20px;margin:auto;word-wrap:break-word;text-align:center">Registration for InterswitchSPAK has already began. Do you have what it takes to become Nigeria's best science student?</div>
+<div bgcolor="grey" style="margin-left:61px;height:250px">
+<img src="SPAK.jpg" class="newsimage"/>
+</div>
+<div class="newsfooter" style="display:flex;align-items:center;justify-content:center">
+<button class="foot" onclick="like(2)"><span class="emoji">&#128077;</span> &nbsp Like</button>
+<button class="foot" onclick="comment(2)"><span class="emoji">&#128488;</span> &nbsp Comment</button>
+<button class="foot" onclick="share(2)"><span class="emoji">&#128257;</span> &nbsp Share</button>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+</div>
+</body>
+</html>
